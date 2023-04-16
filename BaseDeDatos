@@ -1,0 +1,86 @@
+import android.annotation.SuppressLint;
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class BaseDeDatos extends SQLiteOpenHelper {
+
+        // Nombre de la base de datos
+        public static final String NOMBRE_BASE_DE_DATOS = "SNKRSDB";
+
+        // Versión de la base de datos
+        public static final int VERSION_BASE_DE_DATOS = 1;
+
+        // Nombre de la tabla "productos"
+        public static final String TABLA_PRODUCTOS = "productos";
+
+        // Nombre de las columnas de la tabla "productos"
+        public static final String COLUMNA_ID = "id";
+        public static final String COLUMNA_SKU = "sku";
+        public static final String COLUMNA_NOMBRE = "nombre";
+        public static final String COLUMNA_CATEGORIA = "categoria";
+        public static final String COLUMNA_DESCRIPCION = "descripcion";
+        public static final String COLUMNA_TALLA = "talla";
+        public static final String COLUMNA_PRECIO = "precio";
+        public static final String COLUMNA_IMAGEN = "imagen";
+        public static final String COLUMNA_STOCK = "stock";
+        public static final String COLUMNA_PROVEEDOR = "proveedor";
+
+        // Sentencia SQL para crear la tabla "productos"
+        public static final String CREAR_TABLA_PRODUCTOS = "CREATE TABLE " + TABLA_PRODUCTOS + "("
+                + COLUMNA_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+                + COLUMNA_SKU + " INTEGER,"
+                + COLUMNA_NOMBRE + " TEXT,"
+                + COLUMNA_CATEGORIA + " TEXT,"
+                + COLUMNA_DESCRIPCION + " TEXT,"
+                + COLUMNA_TALLA + " INTEGER,"
+                + COLUMNA_PRECIO + " REAL,"
+                + COLUMNA_IMAGEN + " TEXT,"
+                + COLUMNA_STOCK + " INTEGER,"
+                + COLUMNA_PROVEEDOR + " TEXT"
+                + ")";
+
+        // Constructor de la clase
+        public BaseDeDatos(Context context) {
+            super(context, NOMBRE_BASE_DE_DATOS, null, VERSION_BASE_DE_DATOS);
+        }
+
+        //public BaseDeDatos(String sku, String nombre, String categoria, String descripcion, String talla, String precio, String imagen, String stock, String proveedor) {
+
+        //}
+
+
+        // Método para crear la tabla "productos"
+        @Override
+        public void onCreate(SQLiteDatabase db) {
+            db.execSQL(CREAR_TABLA_PRODUCTOS);
+        }
+
+        // Método para actualizar la base de datos
+        @Override
+        public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+            // Aquí puedes agregar código para actualizar la base de datos si es necesario
+        }
+        // Método para abrir la base de datos con permisos de lectura
+        public SQLiteDatabase getReadableDatabase() {
+                return super.getReadableDatabase();
+        }
+
+        // Método para abrir la base de datos con permisos de escritura
+        public SQLiteDatabase openWritable() {
+            return getWritableDatabase();
+        }
+
+        // Método para cerrar la base de datos
+        public void close(SQLiteDatabase db) {
+            db.close();
+        }}
