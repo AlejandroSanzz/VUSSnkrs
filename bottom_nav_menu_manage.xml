@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_agregar"
+        android:icon="@drawable/agregar"
+        android:title="@string/title_agregar" />
+
+    <item
+        android:id="@+id/navigation_eliminar"
+        android:icon="@drawable/eliminar"
+        android:title="@string/title_eliminar" />
+
+    <item
+        android:id="@+id/navigation_actualizar"
+        android:icon="@drawable/actualizar"
+        android:title="@string/title_actualizar" />
+    <item
+        android:id="@+id/navigation_mostrar"
+        android:icon="@drawable/mostrar"
+        android:title="@string/title_mostrar" />
+
+</menu>

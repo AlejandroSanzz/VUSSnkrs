@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@id/navigation_agregar">
+
+    <fragment
+        android:id="@+id/navigation_actualizar"
+        android:name="com.example.vussnkrs.ui.Manage.actualizar.ActualizarFragment"
+        android:label="@string/title_actualizar"
+        tools:layout="@layout/fragment_actualizar" />
+
+    <fragment
+        android:id="@+id/navigation_agregar"
+        android:name="com.example.vussnkrs.ui.Manage.agregar.AgregarFragment"
+        android:label="@string/title_agregar"
+        tools:layout="@layout/fragment_agregar" />
+
+    <fragment
+        android:id="@+id/navigation_eliminar"
+        android:name="com.example.vussnkrs.ui.Manage.eliminar.EliminarFragment"
+        android:label="@string/title_eliminar"
+        tools:layout="@layout/fragment_eliminar" />
+
+    <fragment
+        android:id="@+id/navigation_mostrar"
+        android:name="com.example.vussnkrs.ui.Manage.mostrar.MostrarFragment"
+        android:label="@string/title_mostrar"
+        tools:layout="@layout/fragment_mostrar" />
+
+</navigation>

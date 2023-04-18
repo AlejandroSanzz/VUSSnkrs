@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">VUSSnkrS</string>
+    <string name="talla">talla</string>
+    <string name="pref_talla" translatable="false">pref</string>
+
+    <string name="title_activity_pagina" translatable="false">PaginaActivity</string>
+    <string name="title_comprar">Comprar</string>
+    <string name="title_perfil">Perfil</string>
+
+    <string name="tile_activity_manage" translatable="false">ManageActivity</string>
+    <string name="title_agregar">Agregar</string>
+    <string name="txt_agregar_producto">Agregar Producto</string>
+    <string name="title_eliminar">Eliminar</string>
+    <string name="txt_eliminar_producto">Eliminar Producto</string>
+    <string name="title_actualizar">Actualizar</string>
+    <string name="txt_actualizar_producto">Actualizar Producto</string>
+    <string name="title_mostrar">Mostrar</string>
+
+    <string name="txtNombre">Nombre</string>
+    <string name="txtApellidos">Apellidos</string>
+    <string name="txtCorreo">Correo electrónico</string>
+    <string name="txtNMovil">Número de móvil</string>
+    <string name="txtPrefCompra">Preferencias de compra</string>
+    <string name="txtHombre">Hombre</string>
+    <string name="txtMujer">Mujer</string>
+    <string name="txtNZapatillas">Número de zapatillas</string>
+    <string name="txtIdioma">Idioma</string>
+    <string name="txtAleman">Alemán</string>
+    <string name="txtEspañol">Español</string>
+    <string name="txtFrances">Francés</string>
+    <string name="txtHolandes">Holandés</string>
+    <string name="txtIngles">Inglés</string>
+    <string name="txtItaliano">Italiano</string>
+    <string name="txtPortugues">Portugués</string>
+
+    <string-array name="preferenciasDeCompra">
+        <item></item>
+        <item>@string/txtHombre</item>
+        <item>@string/txtMujer</item>
+    </string-array>
+
+    <string-array name="tallasHombre">
+        <item></item>
+        <item>EU 38.5</item>
+        <item>EU 39</item>
+        <item>EU 40</item>
+        <item>EU 40.5</item>
+        <item>EU 41</item>
+        <item>EU 42</item>
+        <item>EU 42.5</item>
+        <item>EU 43</item>
+        <item>EU 44</item>
+        <item>EU 44.5</item>
+        <item>EU 45</item>
+        <item>EU 45.5</item>
+        <item>EU 46</item>
+        <item>EU 47</item>
+        <item>EU 47.5</item>
+        <item>EU 48</item>
+        <item>EU 48.5</item>
+        <item>EU 49.5</item>
+        <item>EU 50.5</item>
+        <item>EU 51.5</item>
+        <item>EU 52.5</item>
+    </string-array>
+
+    <string-array name="tallasMujer">
+        <item>EU 34.5</item>
+        <item>EU 35</item>
+        <item>EU 35.5</item>
+        <item>EU 36</item>
+        <item>EU 36.5</item>
+        <item>EU 37.5</item>
+        <item>EU 38</item>
+        <item>EU 38.5</item>
+        <item>EU 39</item>
+        <item>EU 40</item>
+        <item>EU 40.5</item>
+        <item>EU 41</item>
+        <item>EU 42</item>
+        <item>EU 42.5</item>
+        <item>EU 43</item>
+        <item>EU 44</item>
+        <item>EU 44.5</item>
+    </string-array>
+
+    <string-array name="todasTallas">
+        <item></item>
+        <item>EU 34.5</item>
+        <item>EU 35</item>
+        <item>EU 35.5</item>
+        <item>EU 36</item>
+        <item>EU 36.5</item>
+        <item>EU 37.5</item>
+        <item>EU 38</item>
+        <item>EU 38.5</item>
+        <item>EU 39</item>
+        <item>EU 40</item>
+        <item>EU 40.5</item>
+        <item>EU 41</item>
+        <item>EU 42</item>
+        <item>EU 42.5</item>
+        <item>EU 43</item>
+        <item>EU 44</item>
+        <item>EU 44.5</item>
+        <item>EU 45</item>
+        <item>EU 45.5</item>
+        <item>EU 46</item>
+        <item>EU 47</item>
+        <item>EU 47.5</item>
+        <item>EU 48</item>
+        <item>EU 48.5</item>
+        <item>EU 49.5</item>
+        <item>EU 50.5</item>
+        <item>EU 51.5</item>
+        <item>EU 52.5</item>
+    </string-array>
+
+    <string-array name="Idiomas">
+        <item>@string/txtAleman</item>
+        <item>@string/txtEspañol</item>
+        <item>@string/txtFrances</item>
+        <item>@string/txtHolandes</item>
+        <item>@string/txtIngles</item>
+        <item>@string/txtItaliano</item>
+        <item>@string/txtPortugues</item>
+    </string-array>
+    <string name="title_activity_manage">ManageActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+</resources>
